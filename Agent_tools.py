@@ -1,6 +1,6 @@
 import os
 from utils import read_yaml
-config = read_yaml("/home/aistudio/config.yaml")
+config = read_yaml("./config.yaml")
 import asyncio
 import requests
 from pydantic import Field

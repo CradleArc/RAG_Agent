@@ -11,6 +11,7 @@ import random
 from vector_utils import DBUtils
 import uuid
 import os
+
 def remove_ipynb_checkpoints_files(directory):
     for root, dirs, files in os.walk(directory):
         for dir_name in dirs:
@@ -21,7 +22,7 @@ def remove_ipynb_checkpoints_files(directory):
 
 
 # Load configuration
-config = read_yaml("/home/aistudio/config.yaml")
+config = read_yaml("./config.yaml")
 db_path = config.get("vector_db_path")
 db_tools = DBUtils(db_path)
 
